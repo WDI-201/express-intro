@@ -25,4 +25,9 @@ router.post('/post', function(req,res) {
   res.send('success')
 })
 
+router.get('/api/:category', function(req, res){
+  console.log(req.params)
+  res.send(req.params)
+})
+
 module.exports = router;
